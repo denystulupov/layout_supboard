@@ -1,0 +1,134 @@
+.footer {
+  padding: 100px 0 80px;
+  background-color: $color-dark;
+  color: $color-white;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__form {
+    max-width: 500px;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+
+    @media only screen and (max-width: 414px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  &__form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 57px;
+    color: #fff;
+
+    &::placeholder {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      opacity: .4;
+    }
+  }
+
+  &__form-btn {
+    background-color: #fff;
+    padding: 10px 66px;
+    border: none;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+
+    @media only screen and (max-width: 414px) {
+      display: block;
+      margin: 0 auto 100px;
+    }
+  }
+
+  &__logo {
+    align-self: flex-start;
+
+    @media only screen and (max-width: 1000px) {
+      order: -1;
+      margin: 0 auto 50px;
+      display: inline-block;
+    }
+
+    svg {
+      @media only screen and (max-width: 414px) {
+        width: 90%;
+      }
+    }
+
+    path {
+      transition: fill .3s;
+    }
+
+    &:hover path {
+      fill: $color-primary;
+    }
+  }
+
+  &__social-title {
+    margin-bottom: 28px;
+    font-weight: 700;
+
+    @media only screen and (max-width: 1000px) {
+      text-align: center;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    gap: 52px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  &__gallery-item {
+    @media only screen and (max-width: 1230px) {
+      width: 100%;
+      align-self: stretch;
+    }
+  }
+
+  &__menu-list {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1000px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__menu-item {
+    @media only screen and (max-width: 1000px) {
+      padding: 15px 0;
+    }
+  }
+}
